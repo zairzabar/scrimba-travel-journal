@@ -1,4 +1,4 @@
-import globe from "../../public/images/globe.svg";
+import globe from "/images/globe.svg";
 
 function Header() {
   return (

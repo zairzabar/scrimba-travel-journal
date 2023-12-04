@@ -2,10 +2,11 @@ import Card from "./Card";
 import data from "./data";
 
 function Main() {
-  data.map((item) => console.log(item));
   return (
     <main className="main">
-      <Card />
+      {data.map((item) => (
+        <Card key={item.id} {...item} />
+      ))}
     </main>
   );
 }
